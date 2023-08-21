@@ -119,7 +119,7 @@ class FormulaOne(MycroftSkill):
         self.speak_dialog(
             'one.formula', {'date': date, 'location': location, 'raceTime': raceTime, 'raceweekday': weekday})
 
-    @intent_handler(IntentBuilder("ScheduleInfo").one_of("F1").one_of("Schedule").one_of("TimeSpecification"))
+    @intent_handler(IntentBuilder("ScheduleInfo").optionally("F1").one_of("Schedule").one_of("Race").one_of("TimeSpecification"))
     def handle_schedule_info(self, message):
         schedule = get_schedule()
         print(schedule)
