@@ -1,2 +1,1 @@
-The next formula 1 race is on this sunday
-The top 3 in todays practice was max verstappen, charles leclerc and sergio perez
+The next f1 race is on {raceweekday} of {date} in {location}. The race starts at {raceTime}!
